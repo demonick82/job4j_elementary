@@ -28,10 +28,10 @@ public class PointTest {
     }
 
     @Test
-    public void when00to33then4() {
-        double expected = 8.544;
-        int x1 = 0;
-        int y1 = 0;
+    public void when11to38then7() {
+        double expected = 7.28;
+        int x1 = 1;
+        int y1 = 1;
         int x2 = 3;
         int y2 = 8;
         double out = Point.distance(x1, y1, x2, y2);
@@ -39,7 +39,7 @@ public class PointTest {
     }
 
     @Test
-    public void when00to30then30() {
+    public void when00to68then10() {
         int expected = 10;
         int x1 = 0;
         int y1 = 0;
