@@ -5,7 +5,7 @@ public class Min {
         int min = array[0];
         for (int index = 1; index < array.length; index++) {
             /* проверить, что эталон больше, чем элемент. записать в эталон элемент массива. */
-            if (array[index] < array[index - 1]) {
+            if (array[index] < min) {
                 min = array[index];
             }
         }
