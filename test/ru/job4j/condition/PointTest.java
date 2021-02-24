@@ -8,44 +8,24 @@ public class PointTest {
     @Test
     public void when00to20then2() {
         int expected = 2;
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 2;
-        int y2 = 0;
-        double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
+        Point a = new Point(0, 0);
+        Point b = new Point(0, 2);
+        Assert.assertEquals(expected, a.distance(b), 0.01);
     }
 
     @Test
     public void when00to30then3() {
         int expected = 3;
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 3;
-        int y2 = 0;
-        double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
-    }
-
-    @Test
-    public void when11to38then7() {
-        double expected = 7.28;
-        int x1 = 1;
-        int y1 = 1;
-        int x2 = 3;
-        int y2 = 8;
-        double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
+        Point a = new Point(0, 0);
+        Point b = new Point(0, 3);
+        Assert.assertEquals(expected, a.distance(b), 0.01);
     }
 
     @Test
     public void when00to68then10() {
         int expected = 10;
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 6;
-        int y2 = 8;
-        double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
+        Point a = new Point(0, 0);
+        Point b = new Point(6, 8);
+        Assert.assertEquals(expected, a.distance(b), 0.01);
     }
 }
