@@ -31,7 +31,7 @@ public class PointTest {
 
     @Test
     public void whenPoint3D() {
-        double expected = 5.385164807134504;
+        double expected = 5.39;
         Point a = new Point(0, 0, 0);
         Point b = new Point(2, 0, 5);
         Assert.assertEquals(expected, a.distance3d(b), 0.01);
